@@ -10,34 +10,57 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            var str = Console.ReadLine();
+            var str2 = Console.ReadLine();
 
-            Console.WriteLine("My name is Tom");
-            Console.WriteLine(7.5);
-            Console.WriteLine(BritEnum.Exotic);
+            bool isAValid = Int32.TryParse(str, out int a);
+            bool isBValid = Int32.TryParse(str2, out int b);
+            if (!isAValid || !isBValid)
+            {
+                Console.WriteLine("Invalid input");
+            }
+            else
+            {
+                Console.WriteLine(a + b);
+            }
+
+            //var result = str + str2;
+            //Console.WriteLine(result);
+
+            //int a = Int32.Parse(str);
+            //int b = Int32.Parse(str2);
+            //var result1 = a + b;
+            //Console.WriteLine(result1);
+            
 
 
-            Cat cat1 = new Cat ("Vaska", 10.1f, BritEnum.Brit);
-            Console.WriteLine(cat1.Name);
-            Console.WriteLine(cat1.Age);
-            Console.WriteLine(cat1.brit);
-
-            //Cat cat2 = new Cat("Barsik", 3);
-            //Console.WriteLine(cat2.Name);
-            //Console.WriteLine(cat2.Age);
-            //Console.WriteLine(cat2.brit);
-
-            //Cat cat3 = new Cat("Murzik", 4, BritEnum.None);
-            //Console.WriteLine(cat3.Name);
-            //Console.WriteLine(cat3.Age);
-            //Console.WriteLine(cat3.brit);
+            //Console.WriteLine("My name is Tom");
+            //Console.WriteLine(7.5);
+            //Console.WriteLine(BritEnum.Exotic);
 
 
-            //Console.WriteLine(cat1);
+            //Cat cat1 = new Cat ("Vaska", 10.1f, BritEnum.Brit);
+            //Console.WriteLine(cat1.Name);
+            //Console.WriteLine(cat1.Age);
+            //Console.WriteLine(cat1.brit);
 
-            //Console.WriteLine(Cat.LegCount);
+            ////Cat cat2 = new Cat("Barsik", 3);
+            ////Console.WriteLine(cat2.Name);
+            ////Console.WriteLine(cat2.Age);
+            ////Console.WriteLine(cat2.brit);
 
-            cat1.Name = "ZZZ";
-            Console.WriteLine(cat1.Name);
+            ////Cat cat3 = new Cat("Murzik", 4, BritEnum.None);
+            ////Console.WriteLine(cat3.Name);
+            ////Console.WriteLine(cat3.Age);
+            ////Console.WriteLine(cat3.brit);
+
+
+            ////Console.WriteLine(cat1);
+
+            ////Console.WriteLine(Cat.LegCount);
+
+            //cat1.Name = "ZZZ";
+            //Console.WriteLine(cat1.Name);
 
         }
     }
