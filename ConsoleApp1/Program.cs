@@ -21,18 +21,24 @@ namespace ConsoleApp1
             Console.WriteLine(cat1.Age);
             Console.WriteLine(cat1.brit);
 
-            Cat cat2 = new Cat("Barsik", 3);
-            Console.WriteLine(cat2.Name);
-            Console.WriteLine(cat2.Age);
-            Console.WriteLine(cat2.brit);
+            //Cat cat2 = new Cat("Barsik", 3);
+            //Console.WriteLine(cat2.Name);
+            //Console.WriteLine(cat2.Age);
+            //Console.WriteLine(cat2.brit);
 
-            Cat cat3 = new Cat("Murzik", 4, BritEnum.None);
-            Console.WriteLine(cat3.Name);
-            Console.WriteLine(cat3.Age);
-            Console.WriteLine(cat3.brit);
+            //Cat cat3 = new Cat("Murzik", 4, BritEnum.None);
+            //Console.WriteLine(cat3.Name);
+            //Console.WriteLine(cat3.Age);
+            //Console.WriteLine(cat3.brit);
 
-            Console.WriteLine(cat1);
+
+            //Console.WriteLine(cat1);
+
+            //Console.WriteLine(Cat.LegCount);
+
+            cat1.Name = "ZZZ";
+            Console.WriteLine(cat1.Name);
+
         }
     }
-    
 }
