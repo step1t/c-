@@ -13,6 +13,8 @@ namespace ConsoleApp1
 
             var a = new MyList();
             a.Add(65);
+            a.Add(88);
+
 
 
         //    int i;
