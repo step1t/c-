@@ -47,6 +47,8 @@
     <Compile Include="Cat.cs" />
     <Compile Include="CommonFigure.cs" />
     <Compile Include="Dog.cs" />
+    <Compile Include="List.cs" />
+    <Compile Include="MyList.cs" />
     <Compile Include="Parrot.cs" />
     <Compile Include="Pet.cs" />
     <Compile Include="Program.cs" />

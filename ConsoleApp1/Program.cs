@@ -10,46 +10,51 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int i;
 
-            var Sq = new Square();
-            var Tri = new Triangle();
-            var Rh = new Rhomb();
+            var a = new MyList();
+            a.Add(65);
 
 
-            do
-            {
-                Console.Write("Меню:\n1) Вывести на экран квадрат" +
-                                   "\n2) Вывести на экран треугольник" +
-                                   "\n3) Вывести на экран ромб" +
-                                   "\n4) Выйти из программы\n\nВаше решение: ");
-                i = int.Parse(Console.ReadLine());
-                switch (i)
-                {
-                    case 1:
-                        Sq.Print();
-                        break;
-                    case 2:
-                        Tri.Print();
-                        break;
-                    case 3:
-                        Rh.Print();
-                        break;
-                    case 4:
-                        Console.WriteLine("Вы решили выйти");
-                        break;
-                    default:
-                        Console.WriteLine("Вы что-то другое нажали...");
-                        break;
-                }
-                Console.Write("\n\n\t\t\tНажмите любую клавишу...");
-                Console.ReadLine();
-                Console.Clear();
-            }
-            while (i != 4);
+        //    int i;
+
+        //    var Sq = new Square();
+        //    var Tri = new Triangle();
+        //    var Rh = new Rhomb();
+
+
+        //    do
+        //    {
+        //        Console.Write("Меню:\n1) Вывести на экран квадрат" +
+        //                           "\n2) Вывести на экран треугольник" +
+        //                           "\n3) Вывести на экран ромб" +
+        //                           "\n4) Выйти из программы\n\nВаше решение: ");
+        //        i = int.Parse(Console.ReadLine());
+        //        switch (i)
+        //        {
+        //            case 1:
+        //                Sq.Print();
+        //                break;
+        //            case 2:
+        //                Tri.Print();
+        //                break;
+        //            case 3:
+        //                Rh.Print();
+        //                break;
+        //            case 4:
+        //                Console.WriteLine("Вы решили выйти");
+        //                break;
+        //            default:
+        //                Console.WriteLine("Вы что-то другое нажали...");
+        //                break;
+        //        }
+        //        Console.Write("\n\n\t\t\tНажмите любую клавишу...");
+        //        Console.ReadLine();
+        //        Console.Clear();
+        //    }
+        //    while (i != 4);
 
  
-        //    var cat1 = new Cat();
+        ////    var cat1 = new Cat();
         //    Console.WriteLine(cat1.Say());
 
         //    var dog1 = new Dog();
