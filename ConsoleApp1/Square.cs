@@ -10,11 +10,13 @@ namespace ConsoleApp1
     {
         public override void Print()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("*********");
             Console.WriteLine("*       *");
             Console.WriteLine("*       *");
             Console.WriteLine("*       *");
             Console.WriteLine("*********");
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }
