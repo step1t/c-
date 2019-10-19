@@ -10,7 +10,29 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            var str = Console.ReadLine();
+                       
+            var cat1 = new Cat();
+            Console.WriteLine(cat1.Say());
+
+            var dog1 = new Dog();
+            Console.WriteLine(dog1.Say());
+
+            var parrot1 = new Parrot();
+            Console.WriteLine(parrot1.Say());
+
+            var array = new Pet[3];
+            array[0] = cat1;
+            array[1] = dog1;
+            array[2] = parrot1;
+
+            foreach(Pet pet in array)
+            {
+                Console.WriteLine(pet.Say());
+                Console.WriteLine(pet.Move());
+            }
+
+
+        var str = Console.ReadLine();
             var str2 = Console.ReadLine();
 
             bool isAValid = Int32.TryParse(str, out int a);
@@ -24,6 +46,7 @@ namespace ConsoleApp1
                 Console.WriteLine(a + b);
             }
 
+
             //var result = str + str2;
             //Console.WriteLine(result);
 
@@ -32,8 +55,6 @@ namespace ConsoleApp1
             //var result1 = a + b;
             //Console.WriteLine(result1);
             
-
-
             //Console.WriteLine("My name is Tom");
             //Console.WriteLine(7.5);
             //Console.WriteLine(BritEnum.Exotic);

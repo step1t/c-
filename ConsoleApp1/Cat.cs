@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    public class Cat
+    public class Cat : Pet
     {
         public string Name;
         public float Age;
@@ -20,12 +20,22 @@ namespace ConsoleApp1
             return sb.ToString();
         }
 
-
-        public Cat(string name, float age, BritEnum brit = BritEnum.Brit)
+        public override string Say()
         {
-            this.Name = name;
-            this.Age = age;
-            this.brit = brit;
+            return "Meow";
         }
-    }
+
+        public override string Move()
+        {
+            return "step";
+        }
+
+        //public Cat(string name, float age, BritEnum brit = BritEnum.Brit)
+        //{
+        //    this.Name = name;
+        //    this.Age = age;
+        //    this.brit = brit;
+        //}
+
+    } 
 }
