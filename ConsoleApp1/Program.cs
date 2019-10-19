@@ -10,44 +10,83 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-                       
-            var cat1 = new Cat();
-            Console.WriteLine(cat1.Say());
+            int i;
 
-            var dog1 = new Dog();
-            Console.WriteLine(dog1.Say());
+            var Sq = new Square();
+            var Tri = new Triangle();
+            var Rh = new Rhomb();
 
-            var parrot1 = new Parrot();
-            Console.WriteLine(parrot1.Say());
 
-            var array = new Pet[3];
-            array[0] = cat1;
-            array[1] = dog1;
-            array[2] = parrot1;
-
-            foreach(Pet pet in array)
+            do
             {
-                Console.WriteLine(pet.Say());
-                Console.WriteLine(pet.Move());
+                Console.Write("Меню:\n1) Вывести на экран квадрат" +
+                                   "\n2) Вывести на экран треугольник" +
+                                   "\n3) Вывести на экран ромб" +
+                                   "\n4) Выйти из программы\n\nВаше решение: ");
+                i = int.Parse(Console.ReadLine());
+                switch (i)
+                {
+                    case 1:
+                        Sq.Print();
+                        break;
+                    case 2:
+                        Tri.Print();
+                        break;
+                    case 3:
+                        Rh.Print();
+                        break;
+                    case 4:
+                        Console.WriteLine("Вы решили выйти");
+                        break;
+                    default:
+                        Console.WriteLine("Вы что-то другое нажали...");
+                        break;
+                }
+                Console.Write("\n\n\t\t\tНажмите любую клавишу...");
+                Console.ReadLine();
+                Console.Clear();
             }
+            while (i != 4);
+
+ 
+        //    var cat1 = new Cat();
+        //    Console.WriteLine(cat1.Say());
+
+        //    var dog1 = new Dog();
+        //    Console.WriteLine(dog1.Say());
+        //    Console.WriteLine(dog1.Move());  // если закоментить, то будет иное поведение
+            
+        //    var parrot1 = new Parrot();
+        //    Console.WriteLine(parrot1.Say());
+
+        //    var array = new Pet[3];
+        //    array[0] = cat1;
+        //    array[1] = dog1;
+        //    array[2] = parrot1;
+
+        //    foreach(Pet pet in array)
+        //    {
+        //        Console.WriteLine(pet.Say());
+        //        Console.WriteLine(pet.Move());
+        //    }
 
 
-        var str = Console.ReadLine();
-            var str2 = Console.ReadLine();
+        //var str = Console.ReadLine();
+        //    var str2 = Console.ReadLine();
 
-            bool isAValid = Int32.TryParse(str, out int a);
-            bool isBValid = Int32.TryParse(str2, out int b);
-            if (!isAValid || !isBValid)
-            {
-                Console.WriteLine("Invalid input");
-            }
-            else
-            {
-                Console.WriteLine(a + b);
-            }
+        //    bool isAValid = Int32.TryParse(str, out int a);
+        //    bool isBValid = Int32.TryParse(str2, out int b);
+        //    if (!isAValid || !isBValid)
+        //    {
+        //        Console.WriteLine("Invalid input");
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine(a + b);
+        //    }
 
 
-            //var result = str + str2;
+        //    //var result = str + str2;
             //Console.WriteLine(result);
 
             //int a = Int32.Parse(str);

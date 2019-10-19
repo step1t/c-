@@ -45,11 +45,15 @@
   <ItemGroup>
     <Compile Include="BritEnum.cs" />
     <Compile Include="Cat.cs" />
+    <Compile Include="CommonFigure.cs" />
     <Compile Include="Dog.cs" />
     <Compile Include="Parrot.cs" />
     <Compile Include="Pet.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rhomb.cs" />
+    <Compile Include="Square.cs" />
+    <Compile Include="Triangle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
